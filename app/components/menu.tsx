@@ -6,7 +6,7 @@ type Props = {};
 export default function Menu({ }: Props) {
     return (
         <div>
-            <ul className="flex justify-center text-2xl font-bold">
+            <ul className="flex justify-center font-bold p-5">
                 <li className="pr-4">
                     <Link href="/">Home </Link>
                 </li>
