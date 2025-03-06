@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../components/Cars/card";
 import { Car } from "@/lib/types/types";
+import CarList from "../components/Cars/carlist";
 type Props = {};
 
 const cars: Car[] = [
@@ -55,14 +55,8 @@ const cars: Car[] = [
 export default function page({ }: Props) {
     return (
         <div>
-            <div className="text-2xl">Cars</div>
-
-            <div className="grid-cols-4 ">
-                {cars.map((car: Car) => (
-                    <Card car={car} />
-                ))}
-            </div>
-
+            <div className="pl-8 text-2xl font-bold">Cars</div>
+            <CarList cars={cars}></CarList>
         </div>
     );
 }
